@@ -80,19 +80,15 @@ public class LinkedList {
 	{
 		Node slow = head;
 		Node fast = head;
-		while (slow != null && fast != null)
+		while (fast != null)
 		{
 			slow = slow.next;
 			fast = fast.next.next;
-			if (slow == fast)
-			{
-				break;
-			}
 		}
 		return slow.value;
 	}
 	/**
-	 * Metoda koja dodaje element niza na mjesto odreðeno indeksom
+	 * Metoda koja dodaje element niza na mjesto odreï¿½eno indeksom
 	 * @param value
 	 * @param index
 	 */
@@ -123,7 +119,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Metoda koja vraæa string sa svim elementima liste
+	 * Metoda koja vraï¿½a string sa svim elementima liste
 	 */
 	
 	public String toString()
@@ -140,7 +136,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Metoda koja uklanja element liste odreðen indeksom
+	 * Metoda koja uklanja element liste odreï¿½en indeksom
 	 * @param index
 	 */
 	
@@ -177,7 +173,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Metoda koja vraæa niz sa èlanovima liste
+	 * Metoda koja vraï¿½a niz sa ï¿½lanovima liste
 	 * @return array
 	 */
 	
@@ -196,7 +192,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Metoda koja provjerava da li postoji èlan liste koji sadrži odreðenu vrijednost
+	 * Metoda koja provjerava da li postoji ï¿½lan liste koji sadrï¿½i odreï¿½enu vrijednost
 	 * @param value
 	 * @return boolean
 	 */
@@ -216,7 +212,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Metoda koja vraæa dužinu liste
+	 * Metoda koja vraï¿½a duï¿½inu liste
 	 * @return
 	 */
 	
